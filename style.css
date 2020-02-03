@@ -1,0 +1,242 @@
+body {
+	font-family: 'Lato', sans-serif;
+/*	background-color: black;
+	color: white;*/
+}
+
+nav {
+	box-sizing: border-box;
+	display: flex;
+	justify-content: flex-end;
+	height: 200px;
+	padding: 20px;
+}
+.nav-item {
+	align-items: center;
+	display: flex;
+	justify-content: flex-end;
+	margin: 30px 0;
+	position: relative;
+	text-transform: uppercase;
+	width: 400px;
+}
+
+.nav-item span {
+	background-color: #ef0;
+	display: inline-block;
+	height: 5px;
+	margin-right: 10px;
+	width: 300px;
+}
+
+.nav-item:nth-of-type(2) span  {
+	width: 270px;
+}
+
+section {
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+p {
+	font-size: 24px;
+}
+
+/*NAME SECTION*/
+#name-section {
+	background-color: #ef0;
+	background: rgb(0,242,96);
+	background: linear-gradient(90deg, rgba(0,242,96,1) 0%, rgba(5,117,230,1) 94%);
+	color: white;
+	padding: 100px 0;
+}
+
+#name {
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 150px;
+	justify-content: center;
+	transform: scale(.8);
+}
+
+#line {
+	align-items: flex-end;
+	display: flex;
+	height: 150px;
+	margin-left: 20px;
+	width: 400px;
+}
+
+.letter-container {
+	display: flex;
+	position: relative;
+	width: 100px;
+}
+
+#container-i {
+	width: 80px;
+}
+
+/* since height grows from top to bottom, flip these so they grow vertically */
+.segment {
+	height: 13px;
+	max-width: 100px;
+	overflow: hidden;
+	transform: rotate(180deg);
+	width: 100px;
+}
+
+.top-segment {
+	height: 13px;
+	overflow: hidden;
+	width: 100px;
+}
+
+.fill, .bottom-fill {
+	background-color: white;
+}
+
+.bottom-fill {
+	height: 100px;
+}
+
+.top-fill {
+	background-color: white;
+	height: 13px;
+	position: absolute;
+	width: 0px;
+}
+
+#segment-l-bottom {
+	min-width: 70px;
+}
+
+#segment-i-bottom {
+	min-width: 60px;
+}
+
+#segment-e-bottom {
+	min-width: 80px;
+}
+
+#segment-l-vert, 
+#segment-i-vert, 
+#segment-n-left, 
+#segment-n-diag, 
+#segment-n-right, 
+#segment-e-vert {
+	bottom: 0;
+	height: 110px;
+	position: absolute;
+	width: 15px;
+}
+
+#segment-i-vert {
+	left: 22px;
+}
+
+#segment-i-top-left, 
+#segment-i-top-right, 
+#segment-e-top {
+	display: block;
+	position: absolute;
+	bottom: 97px;
+	width: 60px;
+}
+
+#segment-i-top-right {
+	transform: rotate(0deg);
+}
+
+#segment-i-top-left {
+	min-width: 15px;
+}
+
+#segment-i-top-left .top-fill, 
+#segment-i-top-right .top-fill {
+	right: 50%;
+}
+
+#segment-n-diag {
+	bottom: -4px;
+	left: 32px;
+	height: 119px;
+	transform: rotate(149deg);
+}
+
+#segment-n-right {
+	left: 64px;
+}
+
+#segment-e-middle {
+	bottom: 50px;
+	display: block;
+	position: absolute;
+	width: 60px;
+}
+
+#segment-e-top {
+	width: 80px;
+}
+
+/*ABOUT SECTION*/
+#about-section {
+	border-bottom: solid 3px #ef0;
+	box-sizing: border-box;
+	flex-wrap: wrap;
+	padding: 20px;
+}
+
+.photo img {
+	border-radius: 50%;
+	height: 300px;
+	width: 300px;
+}
+
+#about-section p {
+	max-width: 600px;
+}
+
+/*PROJECTS SECTION*/
+#projects-section {
+	box-sizing: border-box;
+	padding: 20px;
+}
+
+#projects-section h2 {
+	width: 100%;
+}
+
+#projects-section img {
+	height: 200px;
+	width: 250px;
+}
+
+
+
+@media screen and (min-width: 768px) {
+	.nav-item {
+		top: 120px;
+		transform: rotate(-45deg);
+	}
+	#name-section {
+		padding: 200px 0;
+	}
+	#name {
+		transform: scale(1);
+	}
+	#about-section {
+		padding: 20px 80px;
+	}
+
+	.photo {
+		margin-right: 10%;
+	}
+}
+
+
+
+
+
