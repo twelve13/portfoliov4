@@ -1,7 +1,7 @@
 body {
 	font-family: 'Lato', sans-serif;
-/*	background-color: black;
-	color: white;*/
+	background-color: black;
+	color: white;
 }
 
 nav {
@@ -50,13 +50,16 @@ p {
 	background: rgb(0,242,96);
 	background: linear-gradient(90deg, rgba(0,242,96,1) 0%, rgba(5,117,230,1) 94%);
 	color: white;
+	margin-bottom: 50px;
 	padding: 100px 0;
 }
 
 #name {
+	align-items: baseline;
 	display: flex;
 	flex-wrap: wrap;
-	font-size: 150px;
+	font-family: 'Righteous', sans-serif;
+	font-size: 200px;
 	justify-content: center;
 	transform: scale(.8);
 }
@@ -65,33 +68,37 @@ p {
 	align-items: flex-end;
 	display: flex;
 	height: 150px;
-	margin-left: 20px;
+	margin-left: 15px;
 	width: 400px;
 }
 
 .letter-container {
 	display: flex;
 	position: relative;
-	width: 100px;
+	width: 150px;
 }
 
 #container-i {
 	width: 80px;
 }
 
+#container-n {
+	width: 185px;
+}
+
 /* since height grows from top to bottom, flip these so they grow vertically */
 .segment {
-	height: 13px;
-	max-width: 100px;
+	height: 28px;
+	max-width: 150px;
 	overflow: hidden;
 	transform: rotate(180deg);
-	width: 100px;
+	width: 150px;
 }
 
 .top-segment {
-	height: 13px;
+	height: 28px;
 	overflow: hidden;
-	width: 100px;
+	width: 150px;
 }
 
 .fill, .bottom-fill {
@@ -104,21 +111,21 @@ p {
 
 .top-fill {
 	background-color: white;
-	height: 13px;
+	height: 28px;
 	position: absolute;
 	width: 0px;
 }
 
 #segment-l-bottom {
-	min-width: 70px;
+	min-width: 90px;
 }
 
 #segment-i-bottom {
-	min-width: 60px;
+	min-width: 28px;
 }
 
 #segment-e-bottom {
-	min-width: 80px;
+	min-width: 90px;
 }
 
 #segment-l-vert, 
@@ -128,57 +135,38 @@ p {
 #segment-n-right, 
 #segment-e-vert {
 	bottom: 0;
-	height: 110px;
+	height: 140px;
 	position: absolute;
-	width: 15px;
+	width: 28px;
 }
 
-#segment-i-vert {
-	left: 22px;
-}
-
-#segment-i-top-left, 
-#segment-i-top-right, 
 #segment-e-top {
 	display: block;
 	position: absolute;
-	bottom: 97px;
+	bottom: 112px;
 	width: 60px;
-}
-
-#segment-i-top-right {
-	transform: rotate(0deg);
-}
-
-#segment-i-top-left {
-	min-width: 15px;
-}
-
-#segment-i-top-left .top-fill, 
-#segment-i-top-right .top-fill {
-	right: 50%;
 }
 
 #segment-n-diag {
-	bottom: -4px;
-	left: 32px;
-	height: 119px;
-	transform: rotate(149deg);
+	bottom: -3px;
+	right: 65px;
+	height: 146px;
+	transform: rotate(150deg);
 }
 
 #segment-n-right {
-	left: 64px;
+	right: 26px;
 }
 
 #segment-e-middle {
-	bottom: 50px;
+	bottom: 55px;
 	display: block;
 	position: absolute;
 	width: 60px;
 }
 
 #segment-e-top {
-	width: 80px;
+	width: 90px;
 }
 
 /*ABOUT SECTION*/
@@ -222,7 +210,7 @@ p {
 		transform: rotate(-45deg);
 	}
 	#name-section {
-		padding: 200px 0;
+		padding: 300px 0;
 	}
 	#name {
 		transform: scale(1);

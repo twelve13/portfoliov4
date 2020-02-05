@@ -8,8 +8,6 @@ $(document).ready(function() {
 	let nBottom = $("#segment-n-bottom");
 	let eBottom = $("#segment-e-bottom");
 
-	let iLeftFill = $("#segment-i-top-left .top-fill");
-	let iRightFill = $("#segment-i-top-right .top-fill");
 	let eMiddleFill = $("#segment-e-middle .top-fill");
 	let eTopFill = $("#segment-e-top .top-fill");
 
@@ -20,12 +18,10 @@ $(document).ready(function() {
 
 	fill.height(startingDistance/3);
 
-	bottomSegment.width(100-startingDistance);
+	bottomSegment.width(150-startingDistance);
 
 	if(startingDistance > 350) {
-		iLeftFill.width((.2*startingDistance)-55);
 		eTopFill.width((.75*startingDistance)-230);
-		iRightFill.width((.2*startingDistance)-55);
 	}
 
 	if(startingDistance > 190) {
@@ -50,15 +46,13 @@ $(document).ready(function() {
 			//scrolling down
 			if (distance > currentPos) {
 				
-				bottomSegment.width(100-distance);
+				bottomSegment.width(150-distance);
 
-				if(distance > 350) {
-					iLeftFill.width((.2*distance)-55);
-					eTopFill.width((.75*distance)-230);
-					iRightFill.width((.2*distance)-55);
+				if(distance > 425) {
+					eTopFill.width((.6*distance)-230);
 				}
 
-				if(distance > 190) {
+				if(distance > 250) {
 					eMiddleFill.width((.25*distance)-25);
 				}
 
@@ -67,25 +61,23 @@ $(document).ready(function() {
 				
 					lBottom.width(70+(250/distance));
 
-					iBottom.width(60+(250/distance));
+					iBottom.width(24+(250/distance));
 
 					nBottom.width(15+(250/distance));
 
 					eBottom.width(80+(250/distance));
 				
-				if(distance < 350) {
-					iLeftFill.width(iLeftFill.width()-8);
+				if(distance < 425) {
 					eTopFill.width(eTopFill.width()-8);
-					iRightFill.width(iRightFill.width()-8);
 				}
 
-				if(distance < 190) {
+				if(distance < 250) {
 					eMiddleFill.width(eMiddleFill.width()-8);
 				}
 
 				//reset horizontal lines if at top of screen
 				if(distance == 0) {
-					bottomSegment.width(100);
+					bottomSegment.width(150);
 					topFill.width(0);
 				}
 			}
