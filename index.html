@@ -3,7 +3,7 @@
 <head>
 	<title>Caroline's Portfolio</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="https://fonts.googleapis.com/css?family=Lato|Righteous&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Lato|Righteous|Molle:400i&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,6 +15,7 @@
 		</div>
 	</nav>
 	<section id="name-section">
+		<div id="greeting">Hi,<br>my<br>name is</div>
 		<div id="name">
 			<div>CARO</div><div id="line">
 				<div class="letter-container" id="container-l">
@@ -43,21 +44,27 @@
 	<section id="about-section">
 		<div class="photo"><img src="self-blue.jpg" alt="photo of caroline"></div>
 		<div id="bio">
-			<h2>About</h2>
+			<h2>I make stuff for the web.</h2>
 			<p>I have always been <span class="science-span art-span">drawn to</span> both <span class="science-span">logic</span> and <span class="art-span">art</span>.  There is something comforting about knowing that <em>this</em> will result in <em>that</em>, and any problem can be solved if you just have the correct tools and know how to use them.  A <span class="science-span">former forensic scientist</span>, I loved <span class="science-span">applying critical thinking</span> to solve mysteries and do some social good.  However, I realized I needed more art in my life.</p>
 			<p>There is something freeing in knowing you can create something new, something different in some way from anything else in existence.  This <span class="art-span">love of creation</span> fuels me on a daily basis.  I am <span class="art-span">always working on some project</span> in some fashion.</p>
 			<p>I believe that <span class="magic-span">science plus art</span> makes <span class="magic-span">magic</span> and I exercise that magic <span class="magic-span">through web development</span>.  As a developer, I aim to draw on the skills I've gained, never stop learning, and create a positive impact for those around me.</p>
 		</div>
 	</section>
 	<section id="projects-section">
-		<h2>Projects</h2>
+		<div class="title-container">
+			<h2>DATA VISUALIZATIONS</h2>
+		</div>
  		<div class="project-information" id="data-vis-information">
- 			<img src="data-vis-screenshot.png" alt="screenshot of data visualization">
- 			<div class="project-blurb" id="cache-blurb"><p>Deep interest in displaying data in ways to make info easily understandable and digestible, inviting user to interact.  Worked in exisiting site's color palette.</p></div>
- 			<div class="project-stack">Highcharts</div>
- 			<div class="project-links">
- 				<p><a href="https://twelve13.github.io/WIT-data-vis-bubble-chart/" target="_blank">visit the site</a></p>
- 				<p><a href="https://github.com/twelve13/WIT-data-vis-bubble-chart" target="_blank">see the code</a></p>
+ 			<div class="screenshot-container">
+ 				<img src="data-vis-screenshot-white.png" alt="screenshot of data visualization">
+ 				 <ul class="project-links">
+ 					<li><a href="https://twelve13.github.io/WIT-data-vis-bubble-chart/" target="_blank">interactive bubble chart</a></li>
+ 					<li><a href="https://twelve13.github.io/WIT-data-vis-dashboard/" target="_blank">line chart with control panel</a></li>
+ 				</ul>
+ 			</div>
+ 			<div class="blurb-and-stack">
+ 				<div class="project-blurb" id="cache-blurb"><p>I take a deep interest in displaying data in ways to make the information easily understandable and digestible, inviting the user to interact with and explore the data.</p></div>
+ 				<div class="project-stack">Tools: Highcharts</div>
  			</div>
  		</div>		
 	</section>
