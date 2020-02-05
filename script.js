@@ -14,6 +14,21 @@ $(document).ready(function() {
 	let currentPos = 0;
 	let startingDistance = $(window).scrollTop();
 
+	function debounce(func, wait = 10, immediate = true) {
+		var timeout;
+		return function() {
+			var context = this, args = arguments;
+			var later = function() {
+				timeout = null;
+				if (!immediate) func.apply(context, args);
+			};
+			var callNow = immediate && !timeout;
+			clearTimeout(timeout);
+			timeout = setTimeout(later, wait);
+			if (callNow) func.apply(context, args);
+		};
+	};
+
 	
 
 	fill.height(startingDistance/3);
@@ -38,7 +53,7 @@ $(document).ready(function() {
 
 
 
-	$(window).scroll(function() {
+	const fillLetters = function() {
 			let distance = $(window).scrollTop();
 
 			fill.height(distance/3);
@@ -83,7 +98,9 @@ $(document).ready(function() {
 			}
 
 			currentPos = distance;
-	})
+	}
+
+	$(window).scroll(debounce(fillLetters));
 });
 
 

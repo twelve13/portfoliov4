@@ -1,7 +1,7 @@
 body {
 	font-family: 'Lato', sans-serif;
-	background-color: black;
-	color: white;
+/*	background-color: black;
+	color: white;*/
 }
 
 nav {
@@ -21,7 +21,7 @@ nav {
 	width: 400px;
 }
 
-.nav-item span {
+/*.nav-item span {
 	background-color: #ef0;
 	display: inline-block;
 	height: 5px;
@@ -31,7 +31,7 @@ nav {
 
 .nav-item:nth-of-type(2) span  {
 	width: 270px;
-}
+}*/
 
 section {
 	align-items: center;
@@ -46,10 +46,10 @@ p {
 
 /*NAME SECTION*/
 #name-section {
-	background-color: #ef0;
-	background: rgb(0,242,96);
-	background: linear-gradient(90deg, rgba(0,242,96,1) 0%, rgba(5,117,230,1) 94%);
-	color: white;
+/*	background-color: #ef0;*/
+/*	background: rgb(0,242,96);
+	background: linear-gradient(90deg, rgba(0,242,96,1) 0%, rgba(5,117,230,1) 94%);*/
+	color: black;
 	margin-bottom: 50px;
 	padding: 100px 0;
 }
@@ -102,7 +102,7 @@ p {
 }
 
 .fill, .bottom-fill {
-	background-color: white;
+	background-color: black;
 }
 
 .bottom-fill {
@@ -110,7 +110,7 @@ p {
 }
 
 .top-fill {
-	background-color: white;
+	background-color: black;
 	height: 28px;
 	position: absolute;
 	width: 0px;
@@ -210,7 +210,8 @@ p {
 		transform: rotate(-45deg);
 	}
 	#name-section {
-		padding: 300px 0;
+		margin-bottom: 0;
+		padding: 450px 0 200px 0;
 	}
 	#name {
 		transform: scale(1);
