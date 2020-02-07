@@ -194,6 +194,11 @@ ul {
 	padding: 20px;
 }
 
+#about-section h2 {
+	font-size: 28px;
+	text-align: center;
+}
+
 .photo img {
 	border-radius: 50%;
 	height: 300px;
@@ -283,6 +288,10 @@ ul {
 	}
 	#about-section {
 		padding: 20px 80px 120px 80px;
+	}
+	#about-section h2 {
+		font-size: 48px;
+		text-align: left;
 	}
 	.photo {
 		margin-right: 10%;
