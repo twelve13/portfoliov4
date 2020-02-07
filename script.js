@@ -73,20 +73,19 @@ $(document).ready(function() {
 
 			//scrolling up
 			} else {
+					lBottom.width(lBottom.width()+(100/distance));
+
+					iBottom.width(iBottom.width()+(100/distance));
+
+					nBottom.width(nBottom.width()+(100/distance));
+
+					eBottom.width(eBottom.width()+(100/distance));
 				
-					lBottom.width(70+(250/distance));
-
-					iBottom.width(24+(250/distance));
-
-					nBottom.width(15+(250/distance));
-
-					eBottom.width(80+(250/distance));
-				
-				if(distance < 425) {
+				if(distance < 625) {
 					eTopFill.width(eTopFill.width()-8);
 				}
 
-				if(distance < 250) {
+				if(distance < 400) {
 					eMiddleFill.width(eMiddleFill.width()-8);
 				}
 
